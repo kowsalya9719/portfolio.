@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>kowsalya profile</title>
+    <meta charset="UTF-8" />
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+  </head>
+  <style>
+    #one
+    {
+      font-family: cursive;
+      color:black;
+      background-image:url("https://www.chieflearningofficer.com/wp-content/uploads/sites/3/beans/images/CO_0808_Microlearning-8b38574.jpg");
+      background-size: 1345px 600px;
+      background-repeat: no-repeat;
+      height: 600px;
+      width:1345px; 
+      padding:40px;
+    }
+    
+  </style>
+
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+      const rootElement = document.getElementById("app");
+      
+      const Element1=()=>
+      <div id="one"> 
+       <h1>Skills</h1>
+       <h2> 1.Programming Language:JavaScript</h2>
+       <h2> 2.HTML</h2>
+       <h2> 3.CSS</h2>
+       <h2> 4.Query Language:SQL</h2>
+       </div>;
+        
+        
+       
+       
+
+      
+     const Profile=()=>{return(
+     <div><Element1/>
+     </div>
+     );};
+      
+      ReactDOM.render(<Profile/>, rootElement);
+
+   
+    </script>
+  </body>
+</html>
