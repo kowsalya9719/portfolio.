@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>kowsalya profile</title>
+    <meta charset="UTF-8" />
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+  </head>
+  <style>
+    #one
+    {
+      
+      color:black;
+     
+      background-image:url("https://png.pngtree.com/thumb_back/fw800/back_pic/03/56/94/21579f4dc25a025.jpg");
+      background-size: 1340px 600px;
+      background-repeat: no-repeat;
+      height: 600px;
+      width:1340px; 
+      padding:40px;
+    }
+    h1,h2
+    {
+      font-family: cursive;
+      color:white;
+    }
+    
+  </style>
+
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+      const rootElement = document.getElementById("app");
+      
+      const Element1=()=>
+      <div id="one"> 
+       <h1>Kowsalya Subramani</h1>
+       <h2>Excited to be at the deployment phase of </h2><h2>my career as a full stack developer</h2>
+       </div>;
+        
+     const Profile=()=>{return(
+     <div><Element1/>
+     </div>
+     );};
+      
+      ReactDOM.render(<Profile/>, rootElement);
+
+   
+    </script>
+  </body>
+</html>
