@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>kowsalya profile</title>
+    <meta charset="UTF-8" />
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+  </head>
+  <style>
+    #one
+    {
+      font-family: cursive;
+      color:black;
+      background-image:url("https://cdn.hipwallpaper.com/i/30/65/bpIr9d.jpg");
+      background-size: 1320px 600px;
+      background-repeat: no-repeat;
+      height: 600px;
+      width:1320px; 
+      padding:40px;
+    }
+    
+  </style>
+
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+      const rootElement = document.getElementById("app");
+      
+      const Element1=()=>
+      <div id="one"> 
+       <h1>Contact</h1>
+       <h2>Email:<a href="mail to:kowsi9719@gnail.com">kowsi9719@gmail.com</a></h2>
+       <h2>Mobile Number:9940299063</h2>
+       <h2>github link:<a href="https://github.com/kowsalya9719">https://github.com/kowsalya9719</a></h2>
+        <h2>Address:No.9 voc street,</h2>
+         <h2>sholinganallur,chennai-119</h2>
+       </div>;
+        
+        
+       
+       
+
+      
+     const Profile=()=>{return(
+     <div><Element1/>
+     </div>
+     );};
+      
+      ReactDOM.render(<Profile/>, rootElement);
+
+   
+    </script>
+  </body>
+</html>
