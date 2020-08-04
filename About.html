@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>kowsalya profile</title>
+    <meta charset="UTF-8" />
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+  </head>
+  <style>
+    #one
+    {
+      font-family: cursive;
+      color:white;
+      background-image:url("https://img.freepik.com/free-photo/flat-lay-work-desk-with-coffee-cup-magnifying-glass_23-2148397842.jpg?size=626&ext=jpg");
+      background-size: 1345px 600px;
+      background-repeat: no-repeat;
+      height: 600px;
+      width:1345px; 
+      padding:20px;
+    }
+    
+  </style>
+
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+      const rootElement = document.getElementById("app");
+      
+      const Element1=()=>
+      <div id="one"> 
+        <div id="two">
+       <h1>ABOUT ME</h1>
+       <h2>Name:Kowsalya.S</h2>
+       <h2>DOB:March 19,1997</h2>
+       <h2>Place:Chennai</h2>
+       <h2>Language Known:Tamil and English </h2>
+       <h3>On time delivery of work,Insight into exploring new things,</h3><h3> ability to build relationship and setup trust,ability to work as an individual</h3><h3> contributor and also team member.</h3>
+
+
+       </div>
+       </div>;
+        
+        
+       
+       
+
+      
+     const Profile=()=>{return(
+     <div><Element1/>
+     </div>
+     );};
+      
+      ReactDOM.render(<Profile/>, rootElement);
+
+   
+    </script>
+  </body>
+</html>
