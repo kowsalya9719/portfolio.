@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>kowsalya profile</title>
+    <meta charset="UTF-8" />
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+  </head>
+  <style>
+    #one
+    {
+      font-family: sans-serif;
+      color:white;
+      font-family: cursive;
+      background-image:url("https://countrynavigator.com/wp-content/uploads/iStock-494617082.jpg");
+      background-size: 1345px 800px;
+      background-repeat: no-repeat;
+      height: 800px;
+      width:1345px; 
+      padding:40px;
+    }
+    h2
+    {
+      color:pink;
+    }
+  </style>
+
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+      const rootElement = document.getElementById("app");
+      
+      const Element1=()=>
+      <div id="one"> 
+       <h1>Education and Certification</h1>
+       <h2>Prince Shri Venkateshwara Padmavathy Engineering college,Chennai(2015-2019)</h2>
+       <h3>Bachelor of Engineering</h3>
+       <h4>a)Prince Shri Venkateshwara Padmavathy Engineering college under Anna University.</h4>
+       <h4>b)Completed BE in Electronics and Communication with 78%.</h4>
+       <h2>Sacred Heart Mat Hr Sec School,Chennai(2014-2015)</h2>
+       <h3>XII Class</h3>
+       <h4>a)Sacred Heart Mat Hr Sec School,Chennai under State Board</h4>
+       <h4>b)Got 84% in Senior Secondary Class.</h4>
+       <h2>Rani Meyyammai Hr Sec School,Chennai(2012-2013)</h2>
+       <h3>X Class</h3>
+       <h4>a)Rani Meyyammai Hr Sec School,Chennai under State Board</h4>
+       <h4>b)Got 92% in Secondary Class.</h4>
+       </div>;
+        
+        
+       
+       
+
+      
+     const Profile=()=>{return(
+     <div><Element1/>
+     </div>
+     );};
+      
+      ReactDOM.render(<Profile/>, rootElement);
+
+   
+    </script>
+  </body>
+</html>
