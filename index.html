@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>kowsalya profile</title>
+    <meta charset="UTF-8" />
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+  </head>
+  <style>
+    #one
+    {
+    background-image:url("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+    background-repeat:no-repeat;
+    background-size: 1320px 600px;
+    height:520px;
+    width:1320px;
+    }
+    #two{
+      margin-left: 150px;
+      padding:30px;
+    }
+    #three
+    {
+    background-color:#000066;
+    height:45px;
+    width:1320px; 
+    }
+    li
+    {
+    display:inline;
+    padding:40px;
+
+    }
+    a{
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: cursive;
+    margin-left: 50px; 
+    text-decoration: none;
+    }
+    a:hover
+    {
+      color:#9999ff;
+    }
+    p
+    {
+      font-family: cursive;
+      font-size:25px;
+      font-weight: bold;
+    }
+    h1,h2
+    {
+      font-family: cursive;
+
+    }
+
+  </style>
+
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+      const rootElement = document.getElementById("app");
+      
+       const Element1=()=>
+       
+       <div id="three">
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Education.html">Education</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="Skills.html">Skills</a></li>
+          <li><a href="Contacts.html">Contacts</a></li>
+        </ul>
+       </div>
+
+      const Element2=()=>
+      <div id="one"> 
+       <div id="two">
+       <p>Hello,</p>
+       <h2>I'm Kowsalya.S,</h2>
+       <h2>A Software Developer.</h2></div>
+       </div>;
+        
+       
+       
+
+      
+     const Profile=()=>{return(
+     <div><Element1/><Element2/>
+     </div>
+     );};
+      
+      ReactDOM.render(<Profile/>, rootElement);
+
+   
+    </script>
+  </body>
+</html>
