@@ -20,6 +20,22 @@
       width:1320px; 
       padding:40px;
     }
+     #two
+    {
+    
+    height:45px;
+    width:1250px; 
+    position:fixed;
+    
+    }
+    a:hover
+    {
+      color:#9999ff;
+    }
+     #three
+    {
+      padding-top:80px;
+    }
     
   </style>
 
@@ -29,14 +45,29 @@
       const rootElement = document.getElementById("app");
       
       const Element1=()=>
-      <div id="one"> 
+       
+      <div id="one">
+        <div id="two">
+        <ul>
+            <li style={{display:"inline",padding:"20px"}}><a style={{border:"1px solid black",padding:"6px",backgroundColor:"white",borderRadius:"10px",color:"black",fontWeight:"bold",fontSize:"20px",fontFamily:"cursive",marginLeft:"30px",textDecoration:"none"}} href="profile.html">back</a></li>
+          <li style={{display:"inline",padding:"20px"}}><a style={{border:"1px solid black",padding:"6px",backgroundColor:"white",borderRadius:"10px",color:"black",fontWeight:"bold",fontSize:"20px",fontFamily:"cursive",marginLeft:"30px",textDecoration:"none"}} href="Home.html">Home</a></li>
+          <li style={{display:"inline",padding:"40px"}}><a style={{border:"1px solid black",padding:"6px",backgroundColor:"white",borderRadius:"10px",color:"black",fontWeight:"bold",fontSize:"20px",fontFamily:"cursive",marginLeft:"30px",textDecoration:"none"}} href="About.html">About</a></li>
+          <li style={{display:"inline",padding:"40px"}}><a style={{border:"1px solid black",padding:"6px",backgroundColor:"white",borderRadius:"10px",color:"black",fontWeight:"bold",fontSize:"20px",fontFamily:"cursive",marginLeft:"30px",textDecoration:"none"}} href="Education.html">Education</a></li>
+          <li style={{display:"inline",padding:"40px"}}><a style={{border:"1px solid black",padding:"6px",backgroundColor:"white",borderRadius:"10px",color:"black",fontWeight:"bold",fontSize:"20px",fontFamily:"cursive",marginLeft:"30px",textDecoration:"none"}} href="Projects.html">Projects</a></li>
+          <li style={{display:"inline",padding:"40px"}}><a style={{border:"1px solid black",padding:"6px",backgroundColor:"white",borderRadius:"10px",color:"black",fontWeight:"bold",fontSize:"20px",fontFamily:"cursive",marginLeft:"30px",textDecoration:"none"}} href="Skills.html">Skills</a></li>
+          <li style={{display:"inline",padding:"40px"}}><a style={{border:"1px solid black",padding:"6px",backgroundColor:"white",borderRadius:"10px",color:"black",fontWeight:"bold",fontSize:"20px",fontFamily:"cursive",marginLeft:"30px",textDecoration:"none"}}href="Contacts.html">Contacts</a></li>
+        </ul>
+       </div>
+
+      <div id="three"> 
        <h1>Contact</h1>
-       <h2>Email:<a href="mail to:kowsi9719@gnail.com">kowsi9719@gmail.com</a></h2>
+       <h2>Email:kowsi9719@gmail.com</h2>
        <h2>Mobile Number:9940299063</h2>
        <h2>github link:<a href="https://github.com/kowsalya9719">https://github.com/kowsalya9719</a></h2>
         <h2>Address:No.9 voc street,</h2>
          <h2>sholinganallur,chennai-119</h2>
-       </div>;
+       </div>
+       </div>
         
         
        
@@ -46,7 +77,7 @@
      const Profile=()=>{return(
      <div><Element1/>
      </div>
-     );};
+     )}
       
       ReactDOM.render(<Profile/>, rootElement);
 
