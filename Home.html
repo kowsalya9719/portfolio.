@@ -13,7 +13,6 @@
     {
       
       color:black;
-     
       background-image:url("https://png.pngtree.com/thumb_back/fw800/back_pic/03/56/94/21579f4dc25a025.jpg");
       background-size: 1340px 600px;
       background-repeat: no-repeat;
@@ -21,10 +20,22 @@
       width:1340px; 
       padding:40px;
     }
-    h1,h2
+    h1
+    { 
+      padding-top: 30px;
+     
+    }
+    #two
     {
-      font-family: cursive;
-      color:white;
+  
+    height:45px;
+    width:1250px; 
+    
+    
+    }
+    a:hover
+    {
+      color:#9999ff;
     }
     
   </style>
@@ -36,8 +47,21 @@
       
       const Element1=()=>
       <div id="one"> 
-       <h1>Kowsalya Subramani</h1>
-       <h2>Excited to be at the deployment phase of </h2><h2>my career as a full stack developer</h2>
+       <div id="two">
+        <ul>
+
+          <li style={{display:"inline",padding:"20px"}}><a style={{border:"1px solid black",padding:"6px",backgroundColor:"black",borderRadius:"10px",color:"white",fontWeight:"bold",fontSize:"20px",fontFamily:"cursive",marginLeft:"50px",textDecoration:"none"}} href="profile.html">back</a></li>
+          <li style={{display:"inline",padding:"20px"}}><a style={{border:"1px solid black",padding:"6px",backgroundColor:"black",borderRadius:"10px",color:"white",fontWeight:"bold",fontSize:"20px",fontFamily:"cursive",marginLeft:"50px",textDecoration:"none"}} href="Home.html">Home</a></li>
+          <li style={{display:"inline",padding:"40px"}}><a style={{border:"1px solid black",padding:"6px",backgroundColor:"black",borderRadius:"10px",color:"white",fontWeight:"bold",fontSize:"20px",fontFamily:"cursive",marginLeft:"50px",textDecoration:"none"}} href="About.html">About</a></li>
+          <li style={{display:"inline",padding:"40px"}}><a style={{border:"1px solid black",padding:"6px",backgroundColor:"black",borderRadius:"10px",color:"white",fontWeight:"bold",fontSize:"20px",fontFamily:"cursive",marginLeft:"50px",textDecoration:"none"}} href="Education.html">Education</a></li>
+          <li style={{display:"inline",padding:"40px"}}><a style={{border:"1px solid black",padding:"6px",backgroundColor:"black",borderRadius:"10px",color:"white",fontWeight:"bold",fontSize:"20px",fontFamily:"cursive",marginLeft:"50px",textDecoration:"none"}} href="Projects.html">Projects</a></li>
+          <li style={{display:"inline",padding:"40px"}}><a style={{border:"1px solid black",padding:"6px",backgroundColor:"black",borderRadius:"10px",color:"white",fontWeight:"bold",fontSize:"20px",fontFamily:"cursive",marginLeft:"50px",textDecoration:"none"}} href="Skills.html">Skills</a></li>
+          <li style={{display:"inline",padding:"40px"}}><a style={{border:"1px solid black",padding:"6px",backgroundColor:"black",borderRadius:"10px",color:"white",fontWeight:"bold",fontSize:"20px",fontFamily:"cursive",marginLeft:"50px",textDecoration:"none"}}href="Contacts.html">Contacts</a></li>
+        </ul>
+       </div>
+       <h1 style={{color:"white",fontFamily:"cursive"}}>Kowsalya Subramani</h1>
+       <h2 style={{color:"white",fontFamily:"cursive"}}>Excited to be at the deployment phase of </h2><h2 style={{color:"white",fontFamily:"cursive"}}>my career as a full stack developer</h2>
+       
        </div>;
         
      const Profile=()=>{return(
